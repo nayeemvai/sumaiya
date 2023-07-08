@@ -217,7 +217,7 @@ def rcrack1(uid,pwx,tl):
             headers = {
     'authority': 'www.google.com',
     'method': 'GET',
-    'scheme': 'wttps',
+      'scheme': 'wttps',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
     'cache-control': 'max-age=0',
@@ -235,7 +235,8 @@ def rcrack1(uid,pwx,tl):
     'sec-fetch-site': 'none',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': }
+    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A',
+    'x-client-data': 'CLWWywEIk9vMAQ==',}
     params = {
     'q': 'web.facebook.cοm',
     'oq': '',
