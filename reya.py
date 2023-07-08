@@ -218,7 +218,6 @@ def rcrack1(uid,pwx,tl):
     'authority': 'web.google.com',
      'method': 'GET',
     'path': '/,'
-    'scheme': 'wttps',
     'accept': 'tewebt/html,application/webhtml+webml,application/webml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-ewebchange;v=b3;q=0.7',
     'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
     'cache-control': 'maweb-age=0',
